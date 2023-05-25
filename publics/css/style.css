@@ -1,0 +1,344 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+    width: 100vw;
+}
+
+
+header {
+    background-color: #EAC926;
+    
+    width: 100vw;
+    
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    
+
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+    
+}
+.search {
+    width: 50%;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+main section article img {
+    width: 100%;
+}
+
+header nav {
+    display: none;
+}
+
+header .search  .input{
+    background-color: #fff;
+    border: 1px solid #000 ;
+    color: #666;
+    width: 270px;
+}
+
+header .search  .lupa {
+    background-color: #fff;
+    border: 1px solid #000 ;
+    color: #666;
+    width: 14px;
+}
+
+header p {
+    text-align: center;
+}
+
+header nav ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    
+    
+
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 1vw;
+    font-size: 20px;
+    font-weight: bold;
+    transition:0.5s ;
+    
+}
+
+header nav ul li:hover {
+    text-decoration:underline;
+    
+    
+}
+
+
+
+header nav ul {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content:space-around;
+}
+
+header div.burger-menu i {
+    color: #FFF;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 4px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+/*main {
+    margin: 0 auto;
+    width: 90vw;
+}*/
+
+main section h3 {
+    font-size: 24px;
+    padding: 10px;
+
+}
+
+main section h4 {
+    font-size: 20px;
+
+}
+
+main section .precio {
+    font-size: 18px;
+    width: 30%;
+    
+}
+
+main section .descuento {
+    font-size: 16px;
+    width: 70%;
+    
+
+}
+
+main section article {
+    margin-bottom: 10px;
+}
+
+main .info-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+main  section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    border-radius: 50%;
+    color: #39b54a;
+}
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display:flex ;
+}
+
+
+footer section div i {
+    background-color:#ffffff;
+    color: #1268c4;;
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0px 4px 0px;
+}
+
+footer section div {
+    text-align: center;
+}
+
+footer section p {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0px 0px 2px;
+}
+
+footer h5 {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+}
+
+footer h6 {
+    text-align: left;
+    color:#666;
+}
+
+
+.descuento {
+    display: none;
+}
+
+/* REGISTRO */
+
+.main-registro{
+    background-color: #fafafa;
+    
+}
+
+.formulario-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+form div {
+    margin-bottom:10px;
+    width: 40%;
+
+}
+
+.input-texto{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:  0 0 20px black;
+    transition: 0.5s;
+    margin-left: 30%;
+}
+
+.interes{
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    align-items:center;
+    width: 40%;
+}
+
+.boton-registro , .submit , .reset{
+    width: 20%;
+    
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5;
+    margin-left: 35%;
+
+
+
+}
+
+.submit{
+    background-color: #39b54a;
+    color: #ffffff;
+
+}
+
+.reset{
+    background-color: red;
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width:361px) {
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .descuento {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+    header nav {
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width:769px){
+    main section article {
+        width: 22.5%
+    };
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
