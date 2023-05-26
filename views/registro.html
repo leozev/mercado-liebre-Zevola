@@ -47,7 +47,7 @@
                             <a href="#">Crea tu cuenta</a><i class="fa-solid fa-id-card"></i>
                         </li>
                         <li>
-                            <a href="#">Ingresá</a>
+                            <a href="login">Ingresá</a>
                             
                                 <i class="fa-solid fa-right-to-bracket"></i>
                             
@@ -63,14 +63,15 @@
                 </div>
         </header>
 
-        <section>
-            <img class="banner" src="/image/img-home-banner.jpg" alt="banner" >
-        </section>
+        
 
         <main class="main-registro">
 
 
             <form action="/" method="GET" class="formulario-registro">
+                <div>
+                    <h3> Registraté</h3>
+                </div>
 
                 <div>
                     <input class="input-texto" type="text" name="nombreCompleto" placeholder="nombre y apellido">
@@ -80,8 +81,11 @@
                     <input  class="input-texto" type="text" name="nombreUsiario" placeholder="Usuario">
                 </div>
 
-                <div>
-                    <label for="fechaNacimiento">fecha de Nacimiento</label>
+                <div class="fecha">
+                    <div>
+                        <label for="fechaNacimiento"><h3>fecha de Nacimiento</h3></label>
+                    </div>
+                    
                     <input type="date" name="fechaNacimiento" id="fechaNacimiento">
                 </div>
                 
@@ -93,7 +97,9 @@
                     <input class="input-texto" type="text" name="Domicilio" placeholder="Domicilio">
                 </div>
 
-                    <h3>Tipo de perfil</h3>
+                    <div>
+                        <h3>Tipo de perfil</h3>
+                    </div>
 
                 <div class="interes">
                     <div>
@@ -108,18 +114,31 @@
 
                 </div>
 
-                    <h3>Categorias de Interes</h3>
+                    <div>
+                        <h3>Categorias de Interes</h3>
+                    </div>
                 <div class="interes">
-                    <input type="checkbox" name="interes" value="electro" id="electro">
-                    <label for="electro">Electrodomesticos</label>
-                    <input type="checkbox" name="interes" value="moda" id="moda">
-                    <label for="moda">Ultimo en Moda</label>
-                    <input type="checkbox" name="interes" value="hogar" id="hogar">
-                    <label for="hogar">Articulos para el hogar</label>
-                    <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
-                    <label for="jugueteria">jugueteria</label>
-                    <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
-                    <label for="vidaSana">Fit life</label>
+                    <div>
+                        <input type="checkbox" name="interes" value="electro" id="electro">
+                        <label for="electro">Electrodomesticos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interes" value="moda" id="moda">
+                        <label for="moda">Ultimo en Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interes" value="hogar" id="hogar">
+                        <label for="hogar">Articulos para el hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                        <label for="jugueteria">jugueteria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
+                        <label for="vidaSana">Fit life</label>
+                    </div>
+                    
                 </div>
 
                 <div>
@@ -136,10 +155,10 @@
                 </div>
 
 
-                <div class="boton-regisro">
-                    <button class="submit" type="submit"> enviar</button>
+                <section>
                     <button class="reset" type="reset">cancelar</button>
-                </div>
+                    <button class="submit" type="submit"> enviar</button>
+                </section>
 
 
 

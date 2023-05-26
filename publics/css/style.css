@@ -22,25 +22,57 @@ header {
 
 .top-header {
     display: flex;
-    flex-wrap: wrap;
+    height: 10vh;
     padding: 5px;
+    
     
 
 }
 
 .logo {
-    width: 50%;
-    padding: 10px;
+    width: 15%;
+    padding: 0px;
+    
+    margin: 0%;
+    height: 10vh;
     
 }
-.search {
-    width: 50%;
-    width: 10px;
+
+.barra-busqueda{
+    border:none;
     display: flex;
-    align-items: center;
+    border-radius: 8px;
+    width: 40vw;
+    height: 4vh;
+    margin-top: 3vh;
+
+}
+
+.barra-busqueda input {
+    width: 100%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 3px;
+    transition: 2s ease-in-out;
+}
+
+.barra-busqueda button {
+    border: none;
+    background-color: #ffffff;
+    width: 3vw;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+
+
+.barra-busqueda input:hover {
+    cursor: pointer;
+    border: 1px solid black;
     
     
 }
+
 
 main section article img {
     width: 100%;
@@ -50,11 +82,17 @@ header nav {
     display: none;
 }
 
+header .top-header {
+    display: flex;
+    justify-content: space-between;
+}
+/*
 header .search  .input{
     background-color: #fff;
     border: 1px solid #000 ;
     color: #666;
     width: 270px;
+    margin-left: 40%;
 }
 
 header .search  .lupa {
@@ -62,10 +100,12 @@ header .search  .lupa {
     border: 1px solid #000 ;
     color: #666;
     width: 14px;
-}
+} */
 
 header p {
     text-align: center;
+    width: 20%;
+    display: block;
 }
 
 header nav ul li a{
@@ -113,11 +153,11 @@ header div.burger-menu {
     text-align: center;
 }
 
-/*main {
+main{
     margin: 0 auto;
     width: 90vw;
-}*/
 
+}
 main section h3 {
     font-size: 24px;
     padding: 10px;
@@ -226,56 +266,121 @@ footer h6 {
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 
 }
 
 form div {
     margin-bottom:10px;
-    width: 40%;
+    width: 50%;
+    
+    align-items: center;
+    padding: 5px;
 
 }
+
 
 .input-texto{
     padding: 5px;
     border-radius: 5px;
-    box-shadow:  0 0 20px black;
+    box-shadow:  0 0 10px black;
     transition: 0.5s;
-    margin-left: 30%;
+    width: 200px;
+    border: none;
+    
+}
+
+.fecha{
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.fecha div {
+    width: 60%;
+    
+}
+
+.fecha input {
+    width: 181px;
+    
+    border-radius: 5px;
+    height: 27px;
+    text-align: center;
+    padding-left: 50px;
 }
 
 .interes{
     display: flex;
     flex-direction: column;
     
-    flex-wrap: wrap;
-    align-items:center;
-    width: 40%;
-}
-
-.boton-registro , .submit , .reset{
-    width: 20%;
     
-    border-radius: 5px;
-    padding: 10px;
-    transition: 0.5;
-    margin-left: 35%;
-
-
-
+    align-items: left;
+    width: 100%;
+}
+.interes input{
+    padding: 5px;
+    cursor: pointer;
 }
 
-.submit{
+form section {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+    justify-content: space-between;
+    padding:10px;
+}
+
+.submit{ 
     background-color: #39b54a;
-    color: #ffffff;
+    color: white;
+    margin-left: 10%;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
 
 }
 
 .reset{
     background-color: red;
     color: #ffffff;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
 
 }
 
+.enviar-login {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    width: 200px;
+    background-color: #1259c3;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.enviar-login:hover{
+    box-shadow:  0 0 10px black;
+}
+
+.reset:hover{
+    cursor: pointer;
+    
+    box-shadow:  0 0 10px black;
+}
+.submit:hover{
+    cursor: pointer;
+    
+    box-shadow:  0 0 10px black;
+}
 
 
 
