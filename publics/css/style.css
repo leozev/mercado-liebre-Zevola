@@ -219,6 +219,8 @@ main  section article div i{
 }
 
 
+
+
 footer section div i {
     background-color:#ffffff;
     color: #1268c4;;
@@ -278,6 +280,19 @@ form div {
     align-items: center;
     padding: 5px;
 
+}
+
+article {
+    transition: all 0.5s;
+    border: 1px solid grey;
+}
+
+article h4:hover{
+    transition:  1s;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 
@@ -407,7 +422,7 @@ form section {
         display: block;
     }
     main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
         width: 45%;
     }
     header nav {
@@ -418,6 +433,9 @@ form section {
     header div.burger-menu {
         display: none;
     }
+    .parrafito{
+        display: flex;
+    }
 
 
 }
@@ -426,9 +444,22 @@ form section {
 @media (min-width:769px){
     main section article {
         width: 22.5%
-    };
-    
+    }
+    .articulos h4{
+        display: none;
+        
 
+    }
+
+    article:hover h4 {
+        display: block;
+        transition: 1s;
+    }
+    article:hover i{
+        transform: rotate(-90deg);
+        transition: all 1s;
+
+    }
 }
 
 
